@@ -33,7 +33,7 @@ function generateTicket() {
 }
 
 function downloadTicket() {
-    var ticketContainer = document.getElementById('ticketContainer');
+    var ticketContainer = document.getElementById('card');
     html2canvas(ticketContainer, {
         onrendered: function(canvas) {
             var ticketDataURL = canvas.toDataURL('image/png');
