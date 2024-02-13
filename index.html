@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Generator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Ticket Generator</h1>
+        <div class="form">
+            <input type="text" id="personName" placeholder="Enter your name">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="generateTicket()">Generate Ticket</button>
+        </div>
+        <div class="ticketContainer" id="ticketContainer">
+            <div class="card" id="card">
+                <div class="ticket-header">
+                    <h2>Maha Pakaya Event</h2>
+                </div>
+                <div class="ticket-body" id="ticket-body">
+                   <!-- Generated ticket will appear here -->
+                </div>
+                <div class="ticket-footer">
+                    <p>Event Date: 12th December 2020</p>
+                    <p>Event Time: 10:00 AM</p>
+                </div>
+            </div>
+        </div><br>
+        <div class="buttons-container">
+            <button id="downloadButton" style="display:none;" onclick="downloadTicket()">Download Ticket</button>
+            <button id="shareButton" style="display:none;" onclick="shareOnLinkedIn()">Share on LinkedIn</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
