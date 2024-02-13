@@ -1,0 +1,67 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="file"], button {
+    margin: 5px;
+    padding: 10px;
+}
+
+.ticket {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ticketContainer {
+    height: 250px;
+}
+
+.ticketContainer .card {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    background-color: green;
+    overflow: hidden;
+}
+
+.ticket img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.ticket p {
+    width: 30%;
+}
+
+.ticket-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ticket-footer p{
+    font-size: 11px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
