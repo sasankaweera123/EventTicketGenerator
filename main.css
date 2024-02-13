@@ -1,11 +1,27 @@
-.container {
-    max-width: 600px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
     margin: 0 auto;
-    text-align: center;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
 }
 
 .form {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 input[type="text"], input[type="file"], button {
@@ -19,9 +35,6 @@ input[type="text"], input[type="file"], button {
     justify-content: space-evenly;
 }
 
-.ticketContainer {
-    height: 250px;
-}
 
 .ticketContainer .card {
     width: 300px;
@@ -33,6 +46,7 @@ input[type="text"], input[type="file"], button {
     margin: 20px auto;
     background-color: green;
     overflow: hidden;
+    text-align: center;
 }
 
 .ticket img {
@@ -64,4 +78,9 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-evenly;
 }
