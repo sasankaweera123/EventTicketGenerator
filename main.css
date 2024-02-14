@@ -14,7 +14,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .form {
@@ -33,6 +34,10 @@ input[type="text"], input[type="file"], button {
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.ticketContainer {
+    margin: 0 2rem;
 }
 
 
@@ -83,4 +88,28 @@ button:hover {
 .buttons-container{
     display: flex;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .ticketContainer {
+        margin: 1rem 0;
+    }
+    .ticketContainer .card {
+        width: 18rem;
+    }
+    .ticket p {
+        width: 40%;
+    }
+    .ticket img {
+        width: 60px;
+        height: 60px;
+    }
+    .ticket-footer p{
+        font-size: 10px;
+    }
+    
 }
