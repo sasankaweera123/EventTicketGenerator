@@ -101,6 +101,7 @@ button:hover {
     }
     .ticketContainer {
         margin: 1rem 0;
+        display: contents;
     }
     .ticketContainer .card {
         width: 18rem;
