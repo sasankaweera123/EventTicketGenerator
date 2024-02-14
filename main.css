@@ -55,9 +55,7 @@ input[type="text"], input[type="file"], button {
 }
 
 .ticket img {
-    width: 80px;
     height: 80px;
-    border-radius: 50%;
 }
 
 .ticket p {
@@ -95,10 +93,12 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
+    body{
+        height: 120vh;
+    }
     .container {
         width: 100%;
     }
-
     .ticketContainer {
         margin: 1rem 0;
     }
@@ -109,7 +109,6 @@ button:hover {
         width: 40%;
     }
     .ticket img {
-        width: 60px;
         height: 60px;
     }
     .ticket-footer p{
