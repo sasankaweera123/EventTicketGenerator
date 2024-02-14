@@ -13,7 +13,7 @@
         <div class="form">
             <input type="text" id="personName" placeholder="Enter your name">
             <input type="file" id="imageUpload" accept="image/*">
-            <button onclick="generateTicket()">Generate Ticket</button>
+            <button type="button" onclick="generateTicket()">Generate Ticket</button>
         </div>
         <div class="ticketContainer" id="ticketContainer">
             <div class="card" id="card">
@@ -30,8 +30,8 @@
             </div>
         </div><br>
         <div class="buttons-container">
-            <button id="downloadButton" style="display:none;" onclick="downloadTicket()">Download Ticket</button>
-            <button id="shareButton" style="display:none;" onclick="shareOnLinkedIn()">Share on LinkedIn</button>
+            <button type="button" id="downloadButton" onclick="downloadTicket()">Download Ticket</button>
+            <button type="button" id="shareButton" onclick="shareOnLinkedIn()">Share on LinkedIn</button>
         </div>
     </div>
     <script src="main.js"></script>

@@ -90,6 +90,10 @@ button:hover {
     justify-content: space-evenly;
 }
 
+.buttons-container button{
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     .container {
         width: 100%;
